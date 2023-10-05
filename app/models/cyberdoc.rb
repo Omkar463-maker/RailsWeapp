@@ -1,0 +1,2 @@
+class Cyberdoc < ApplicationRecord
+end

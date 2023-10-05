@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>CyberDocs Users</h1>
+
+<div id="cyberdocs">
+  <% @cyberdocs.each do |cyberdoc| %>
+    <%= render cyberdoc %>
+    <p>
+      <%= link_to "Show", cyberdoc, class: "btn btn-secondary" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New User", new_cyberdoc_path, class: "btn btn-dark" %>

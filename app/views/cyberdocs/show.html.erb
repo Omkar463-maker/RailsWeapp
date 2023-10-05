@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+<div class="col-md-6">
+  <div class="h-100 p-5 text-bg-dark rounded-3">
+    <h2>
+      <%= @cyberdoc.first_name %>
+      <%= @cyberdoc.last_name %>  
+    </h2>
+
+    <p class="lead">
+      <%= @cyberdoc.email %> | 
+      <%= @cyberdoc.phone %> |
+      <%= @cyberdoc.insta %> |
+    </p>
+    </br>
+    <%= link_to "Edit this cyberdoc", edit_cyberdoc_path(@cyberdoc), class: "btn btn-secondary" %> |
+    <%= link_to "Back to cyberdocs", cyberdocs_path, class: "btn btn-secondary" %>
+    <p>
+      <%= button_to "Destroy this cyberdoc", @cyberdoc, method: :delete, class: "btn btn-danger" %>
+    </p>
+  </div>
+</div>
