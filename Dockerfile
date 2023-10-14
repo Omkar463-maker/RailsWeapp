@@ -1,6 +1,6 @@
 FROM ruby:3.2.2 as base
 
-RUN apt-get update -qq && apt-get install -y build essentail apt-utils
+RUN yum update -qq && yum install -y build essentail apt-utils
 
 WORKDIR /app
 
